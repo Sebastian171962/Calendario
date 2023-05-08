@@ -136,7 +136,10 @@ class LogInPage extends StatelessWidget {
                                         // Add your log in logic here
 
                     // Navigate to MainViewPage
-                   
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => MainViewPage()),
+                    );
                   },
                   child: Text(
                     'Log In',
